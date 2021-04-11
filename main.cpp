@@ -1,9 +1,5 @@
 #include "VM.h"
-#include "windows.h"
-#define _CRTDBG_MAP_ALLOC //to get more details
-#include <stdlib.h>  
-#include <crtdbg.h>   //for malloc and free
-//#include "VM.cpp"
+#include "VM.cpp"
 using namespace std;
 
 void test(string filename) {
