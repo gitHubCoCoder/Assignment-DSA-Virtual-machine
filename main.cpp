@@ -51,10 +51,10 @@ void testSuite() {
   /// </summary>
   int testNum = 0;
 
-   /*MOVE
-   Test simple
-   1
-   Move address to R*/
+   // MOVE
+   // Test simple
+   // 1
+   // Move address to R
   testArray[testNum++] = testcase(
     "Move R1, 1A\n"
     "Output R1\n"
@@ -467,20 +467,6 @@ void testSuite() {
 
 int main()
 {
-  //_CrtMemState sOld;
-  //_CrtMemState sNew;
-  //_CrtMemState sDiff;
-  //_CrtMemCheckpoint(&sOld); //take a snapchot
   testSuite();
-  //_CrtMemCheckpoint(&sNew); //take a snapchot 
-  //if (_CrtMemDifference(&sDiff, &sOld, &sNew)) // if there is a difference
-  //{
-  //  OutputDebugString(L"-----------_CrtMemDumpStatistics ---------");
-  //  _CrtMemDumpStatistics(&sDiff);
-  //  OutputDebugString(L"-----------_CrtMemDumpAllObjectsSince ---------");
-  //  _CrtMemDumpAllObjectsSince(&sOld);
-  //  OutputDebugString(L"-----------_CrtDumpMemoryLeaks ---------");
-  //  _CrtDumpMemoryLeaks();
-  //}
   return 0;
 }
